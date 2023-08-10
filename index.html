@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sebastian's Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="home" class="home-section">
+    <h1>Sebastian's Portfolio</h1>
+    <p>Industrial Designer and Music Enthusiast</p>
+  </section>
+
+  <section id="portfolio" class="portfolio-section">
+    <h2>Portfolio</h2>
+    <div class="portfolio-item">
+      <img src="project1.jpg" alt="Project 1">
+      <div class="overlay">
+        <h3>Project 1</h3>
+        <p>A brief description of the project goes here.</p>
+      </div>
+    </div>
+    <!-- Add more portfolio items similarly -->
+  </section>
+
+  <section id="contact" class="contact-section">
+    <h2>Contact</h2>
+    <form id="contact-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+    <div id="response-message"></div>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Sebastian's Portfolio</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
